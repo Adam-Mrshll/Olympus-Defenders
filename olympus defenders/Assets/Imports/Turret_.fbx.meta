@@ -8,17 +8,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Turret_GunMetal
-    second: {fileID: 2100000, guid: 46ed26f407ff4ba4bac2df1e09d14b3f, type: 2}
+    second: {fileID: 2100000, guid: 5ee18c070f6ef844a99a99ead4f47699, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Turret_Metal
-    second: {fileID: 2100000, guid: 76d55ea4277ecfa449e44be1c5de1145, type: 2}
+    second: {fileID: 2100000, guid: c020091bda8430244a29899476739136, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Turret_Metal2
-    second: {fileID: 2100000, guid: 9fbdad0fe47b97644a6017b58d483208, type: 2}
+    second: {fileID: 2100000, guid: 8d9507046fac7d041ae7083a5be5ad98, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -48,7 +48,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 3
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -84,7 +84,7 @@ ModelImporter:
     strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
@@ -103,14 +103,14 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 3
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
