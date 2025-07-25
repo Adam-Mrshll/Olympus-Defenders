@@ -1469,9 +1469,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 15
+  fireRate: 1
   enemyTag: Enemy
   partToRotate: {fileID: 26651963}
   turnspeed: 10
+  bulletPrefab: {fileID: 2963606264424242909, guid: 01cf1e7ea69ae8146a051f7f9e6427a1, type: 3}
+  firePoint: {fileID: 0}
 --- !u!4 &144136171 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 26b54f76b54c00a43bfea1c72504f5d0, type: 3}
@@ -3049,9 +3052,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 15
+  fireRate: 1
   enemyTag: Enemy
   partToRotate: {fileID: 756319156}
   turnspeed: 10
+  bulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
 --- !u!4 &336005549 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 26b54f76b54c00a43bfea1c72504f5d0, type: 3}
@@ -6382,9 +6388,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 15
+  fireRate: 1
   enemyTag: Enemy
   partToRotate: {fileID: 347605187}
   turnspeed: 10
+  bulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
 --- !u!4 &651769666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 26b54f76b54c00a43bfea1c72504f5d0, type: 3}
@@ -18579,9 +18588,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 15
+  fireRate: 1
   enemyTag: Enemy
   partToRotate: {fileID: 1093594597}
   turnspeed: 10
+  bulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
 --- !u!1 &6735484374107103830
 GameObject:
   m_ObjectHideFlags: 0
