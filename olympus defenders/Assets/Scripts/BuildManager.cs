@@ -16,7 +16,7 @@ public class BuildManager : MonoBehaviour
     }
 
     public GameObject standardTurretPrefab; // Zeus turret
-    public GameObject anotherTurretPrefab; // Hephaestus turret
+    public GameObject hephaestusTurretPrefab; // Hephaestus turret
 
     private GameObject turretToBuild;
 

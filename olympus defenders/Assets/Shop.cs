@@ -9,14 +9,14 @@ public class Shop : MonoBehaviour
     {
         buildManager = BuildManager.instance;
     }
-    public void PurchaseStandardTurret()
+    public void PurchaseZeusTurret()
     {
-        Debug.Log("Standard Turret Purchased!");
+        Debug.Log("Zeus Purchased!");
         buildManager.SetTurretToBuild(buildManager.standardTurretPrefab); //Zeus turret
     }
-    public void PurchaseMissileLauncher()
+    public void PurchaseHephaestusTurret()
     {
-        Debug.Log("Missile Launcher Purchased!");
-        buildManager.SetTurretToBuild(buildManager.anotherTurretPrefab); //Hephaestus turret
+        Debug.Log("Hephastus Purchased!");
+        buildManager.SetTurretToBuild(buildManager.hephaestusTurretPrefab); //Hephaestus turret
     }
 }
