@@ -13,12 +13,12 @@ public class Shop : MonoBehaviour
     }
     public void SelectZeusTurret()
     {
-        Debug.Log("Zeus Purchased!");
+        Debug.Log("Selected: Zeus");
         buildManager.SelectTurretToBuild(standardTurret); //Zeus turret
     }
     public void SelectHephaestusTurret()
     {
-        Debug.Log("Hephastus Purchased!");
+        Debug.Log("Selected: Hephaestus");
         buildManager.SelectTurretToBuild(hephaestusTurret); //Hephaestus turret
     }
 }

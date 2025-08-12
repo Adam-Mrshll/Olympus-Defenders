@@ -4,11 +4,11 @@ using UnityEngine.EventSystems;
 public class Node : MonoBehaviour
 {
     public Color hoverColor;
-
-    public GameObject turret;
     public Vector3 positionOffset;
 
     [Header("Optional")]
+    public GameObject turret;
+
     private Renderer rend;
     private Color startColor;
 
