@@ -63,7 +63,6 @@ public class Node : MonoBehaviour
             GetComponent<Renderer>().material.color = notEnoughMoneyColor; // change to red if not enough money
         }
 
-            GetComponent<Renderer>().material.color = hoverColor;
     }
 
     void OnMouseExit()
