@@ -21,6 +21,7 @@ public class BuildManager : MonoBehaviour
     private TurretBlueprint turretToBuild;
 
     public bool CanBuild { get { return turretToBuild != null; } } // property, (can only get something from this variable)
+    public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } } 
 
     public void BuildTurretOn (Node node)
     {

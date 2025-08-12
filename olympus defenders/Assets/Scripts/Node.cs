@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 public class Node : MonoBehaviour
 {
     public Color hoverColor;
+    public Color notEnoughMoneyColor; // color for when user does not have enough money to build
     public Vector3 positionOffset;
 
     [Header("Optional")]
@@ -53,7 +54,16 @@ public class Node : MonoBehaviour
         if (!buildManager.CanBuild)
             return;
 
-        GetComponent<Renderer>().material.color = hoverColor;
+        if (buildManager.HasMoney)
+        {
+            GetComponent<Renderer>().material.color = hoverColor;
+        }
+        else
+        {
+            GetComponent<Renderer>().material.color = notEnoughMoneyColor; // change to red if not enough money
+        }
+
+            GetComponent<Renderer>().material.color = hoverColor;
     }
 
     void OnMouseExit()
