@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    public TurretBlueprint standardTurret;
+    public TurretBlueprint hephaestusTurret;
 
     BuildManager buildManager;
 
@@ -9,14 +11,14 @@ public class Shop : MonoBehaviour
     {
         buildManager = BuildManager.instance;
     }
-    public void PurchaseZeusTurret()
+    public void SelectZeusTurret()
     {
         Debug.Log("Zeus Purchased!");
-        buildManager.SetTurretToBuild(buildManager.standardTurretPrefab); //Zeus turret
+        buildManager.SelectTurretToBuild(standardTurret); //Zeus turret
     }
-    public void PurchaseHephaestusTurret()
+    public void SelectHephaestusTurret()
     {
         Debug.Log("Hephastus Purchased!");
-        buildManager.SetTurretToBuild(buildManager.hephaestusTurretPrefab); //Hephaestus turret
+        buildManager.SelectTurretToBuild(hephaestusTurret); //Hephaestus turret
     }
 }

@@ -18,15 +18,19 @@ public class BuildManager : MonoBehaviour
     public GameObject standardTurretPrefab; // Zeus turret
     public GameObject hephaestusTurretPrefab; // Hephaestus turret
 
-    private GameObject turretToBuild;
+    private TurretBlueprint turretToBuild;
 
-    public GameObject GetTurretToBuild ()
+    public bool CanBuild { get { return turretToBuild != null; } } // property, (can only get something from this variable)
+
+    public void BuildTurretOn (Node node)
     {
-        return turretToBuild;
+        GameObject  turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
+        node.turret = turret;
     }
 
-    public void SetTurretToBuild (GameObject turret)
+    public void SelectTurretToBuild (TurretBlueprint turret)
     {
         turretToBuild = turret;
     }
+
 }
