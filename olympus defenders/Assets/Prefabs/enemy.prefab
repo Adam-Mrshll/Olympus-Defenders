@@ -123,3 +123,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   health: 100
+  value: 20
