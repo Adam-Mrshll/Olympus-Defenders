@@ -568,9 +568,13 @@ MonoBehaviour:
   standardTurret:
     prefab: {fileID: 6553616332031238064, guid: 98517984eb87763408fdb54983f5e221, type: 3}
     cost: 100
+    upgradedPrefab: {fileID: 6553616332031238064, guid: 912bf5ea724faa9429605af90d4a63a6, type: 3}
+    upgradeCost: 100
   hephaestusTurret:
     prefab: {fileID: 7821960624734204900, guid: 5f53b69311cf6b14c99815547e77d403, type: 3}
     cost: 200
+    upgradedPrefab: {fileID: 3784832615608071079, guid: bf105365987e41c4b8a76bf78118f7ec, type: 3}
+    upgradeCost: 200
 --- !u!1001 &54428454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1243,7 +1247,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116371625}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1251,7 +1255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 55}
+  m_AnchoredPosition: {x: 0, y: -3}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &116371627
@@ -4424,7 +4428,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 405097817}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1572211348}
+        m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
+        m_MethodName: Upgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &405097817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9663,18 +9679,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854387605}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 78.5}
+  m_LocalRotation: {x: 0.6427876, y: 0, z: 0, w: 0.7660445}
+  m_LocalPosition: {x: 0, y: 0, z: 85.4}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 116371626}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 80, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 37.5, y: 1}
-  m_SizeDelta: {x: 800, y: 200}
+  m_SizeDelta: {x: 800, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &858707290
 GameObject:
@@ -16096,6 +16112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 393923079}
+  upgradeCost: {fileID: 10190213}
 --- !u!1001 &1597050149
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,9 +1,13 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NodeUI : MonoBehaviour
 {
 
     public GameObject ui;
+
+    public Text upgradeCost;
+    public Button upgradeButton;
     
     private Node target;
 
@@ -13,12 +17,30 @@ public class NodeUI : MonoBehaviour
 
         transform.position = target.GetBuildPosition();
 
-        ui.SetActive(true);
+        
+
+        if (target.isUpgraded)
+        {
+            upgradeCost.text = "MAX";
+            upgradeButton.interactable = false; 
+        }
+        else {
+            upgradeCost.text = "UPGRADE: $" + target.turretBlueprint.upgradeCost;
+            upgradeButton.interactable = true;
+        }
+
+            ui.SetActive(true);
     }
 
     public void Hide()
     {
         ui.SetActive(false);
+    }
+
+    public void Upgrade()
+    {
+        target.UpgradeTurret();
+        BuildManager.instance.DeselectNode();
     }
 
 }
