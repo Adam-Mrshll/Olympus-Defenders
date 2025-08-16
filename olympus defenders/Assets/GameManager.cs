@@ -3,9 +3,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    public static bool GameIsOver = false;
+    public static bool GameIsOver;
 
     public GameObject gameOverUI;
+
+    void Start()
+    {
+        GameIsOver = false;
+    }
     // Update is called once per frame
     void Update()
     {
