@@ -16113,6 +16113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 393923079}
   upgradeCost: {fileID: 10190213}
+  upgradeButton: {fileID: 405097816}
 --- !u!1001 &1597050149
 PrefabInstance:
   m_ObjectHideFlags: 0
