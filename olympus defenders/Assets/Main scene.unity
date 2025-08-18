@@ -4284,7 +4284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &393923080
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4473,9 +4473,9 @@ RectTransform:
   - {fileID: 10190212}
   m_Father: {fileID: 950053091}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 52.5, y: -27.022}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 105, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &405097816
@@ -7600,9 +7600,9 @@ RectTransform:
   - {fileID: 436550708}
   m_Father: {fileID: 950053091}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 157.5, y: -27.022}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 105, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &680889725
@@ -7648,7 +7648,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 680889726}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1572211348}
+        m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
+        m_MethodName: sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &680889726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16499,6 +16511,7 @@ MonoBehaviour:
   ui: {fileID: 393923079}
   upgradeCost: {fileID: 10190213}
   upgradeButton: {fileID: 405097816}
+  sellAmount: {fileID: 436550709}
 --- !u!1001 &1597050149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18016,16 +18029,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6665167281671671897, guid: 5b288e0483ef29e4eaca18d67c9ecb06, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1868195105598255273, guid: 5b288e0483ef29e4eaca18d67c9ecb06, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8386088809125160448}
   m_SourcePrefab: {fileID: 100100000, guid: 5b288e0483ef29e4eaca18d67c9ecb06, type: 3}
---- !u!4 &1738972686 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8386088809706437618, guid: 5b288e0483ef29e4eaca18d67c9ecb06, type: 3}
-  m_PrefabInstance: {fileID: 1738972685}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1741420839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21285,9 +21297,14 @@ Transform:
   - {fileID: 1300852881}
   - {fileID: 1557874513}
   - {fileID: 2046834168}
-  - {fileID: 1738972686}
+  - {fileID: 8386088809125160447}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1868195104115142308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1868195105598255273, guid: 5b288e0483ef29e4eaca18d67c9ecb06, type: 3}
+  m_PrefabInstance: {fileID: 1738972685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1984602988195021702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21463,6 +21480,33 @@ PrefabInstance:
       addedObject: {fileID: 1100747691}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60febb9956c0c964aab0173606f24248, type: 3}
+--- !u!4 &8386088809125160447 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8386088809706437618, guid: 5b288e0483ef29e4eaca18d67c9ecb06, type: 3}
+  m_PrefabInstance: {fileID: 1738972685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8386088809125160448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868195104115142308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d465ebabed1e04693c790eb1fc7074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 1, g: 0.9764151, b: 0.9764151, a: 0}
+  notEnoughMoneyColor: {r: 1, g: 0, b: 0, a: 0}
+  positionOffset: {x: 0, y: 0, z: 0}
+  turret: {fileID: 0}
+  turretBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
