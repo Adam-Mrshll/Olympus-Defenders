@@ -1,25 +1,36 @@
 using UnityEngine;
+using UnityEngine.UI; 
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 10f;
+    public float startspeed = 10f;
 
-    public int health = 100;
-
+    [HideInInspector]
+    public float speed;
+    public float startHealth = 100;
+    private float health; 
     public int value = 50; // amount of money player gets from killing this enemy
 
     private Transform target;
     private int wavepointIndex = 0;
 
+[Header("unity stuff")]
+public Image healthBar;
+
     void Start()
     {
         target = Waypoint.points[0];
+        health = startHealth;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
-        Debug.Log($"Enemy takes {damage} damage. Health before: {health}");
+        
+        Debug.Log($"Enemy takes {damage} amount. Health before: {health}");
         health -= damage;
+        
+        healthBar.fillAmount = health / startHealth;
+        
         Debug.Log($"Enemy health now: {health}");
         if (health <= 0)
         {
