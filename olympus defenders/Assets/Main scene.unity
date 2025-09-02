@@ -566,7 +566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurret:
-    prefab: {fileID: 6553616332031238064, guid: 98517984eb87763408fdb54983f5e221, type: 3}
+    prefab: {fileID: 3971772494600779381, guid: 1c16b5dcb2303614fae1214aa072ccbc, type: 3}
     cost: 100
     upgradedPrefab: {fileID: 6553616332031238064, guid: 912bf5ea724faa9429605af90d4a63a6, type: 3}
     upgradeCost: 100
@@ -3584,7 +3584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6609fd1c7b775d14cbec7e731ccd9154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardTurretPrefab: {fileID: 6553616332031238064, guid: 98517984eb87763408fdb54983f5e221, type: 3}
+  standardTurretPrefab: {fileID: 3971772494600779381, guid: 1c16b5dcb2303614fae1214aa072ccbc, type: 3}
   hephaestusTurretPrefab: {fileID: 7821960624734204900, guid: 5f53b69311cf6b14c99815547e77d403, type: 3}
   nodeUI: {fileID: 1572211348}
 --- !u!114 &331431300
