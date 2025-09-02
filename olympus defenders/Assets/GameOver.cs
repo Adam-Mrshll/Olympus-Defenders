@@ -3,7 +3,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
+
+
 {
+    public string menutoload = "Main Menu";
     public Text roundsText;
 
     void OnEnable()
@@ -18,7 +21,9 @@ public class GameOver : MonoBehaviour
 
     public void Menu()
     {
-        Debug.Log("Loading menu..."); // LOAD JAMIES MENU SCENE HERE
+        Debug.Log("Loading menu...");
+        SceneManager.LoadScene(menutoload);
+        // LOAD JAMIES MENU SCENE HERE
     }
 
 }

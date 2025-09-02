@@ -2470,7 +2470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &181966733
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2507,6 +2507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edcddab5705e8004fa72cf40aa6726d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menutoload: Main Menu
   roundsText: {fileID: 1629399032}
 --- !u!1001 &183674761
 PrefabInstance:
