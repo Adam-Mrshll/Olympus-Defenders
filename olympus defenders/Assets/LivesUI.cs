@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public class LivesUI : MonoBehaviour
 {
 
-    public Text livesText;
-    
+    public Text livesText; // reference to the text object in the UI    
+
 
     // Update is called once per frame
     void Update()

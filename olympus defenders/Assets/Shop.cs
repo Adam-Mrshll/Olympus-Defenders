@@ -1,13 +1,14 @@
 using UnityEngine;
 
-public class Shop : MonoBehaviour
+public class Shop : MonoBehaviour // handles the shop UI and turret selection
 {
     public TurretBlueprint standardTurret;
     public TurretBlueprint hephaestusTurret;
 
     BuildManager buildManager;
 
-    void Start()
+    void Start() // runs when the object is created
+    
     {
         buildManager = BuildManager.instance;
     }
