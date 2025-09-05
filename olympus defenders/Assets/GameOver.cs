@@ -9,7 +9,7 @@ public class GameOver : MonoBehaviour
     public string menutoload = "Main Menu";
     public Text roundsText;
 
-    void OnEnable()
+    void OnEnable() // runs when the game over object is enabled (set to active true in gamemanager script) 
     {
         roundsText.text = PlayerStats.Rounds.ToString();
     }

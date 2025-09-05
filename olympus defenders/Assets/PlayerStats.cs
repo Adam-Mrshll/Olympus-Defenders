@@ -10,7 +10,7 @@ public class PlayerStats : MonoBehaviour
 
     public static int Rounds;
 
-    void Start()
+    void Start() // runs when the object is created
     {
         Money = startMoney;
         Lives = startLives;

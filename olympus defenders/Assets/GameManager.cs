@@ -21,13 +21,13 @@ public class GameManager : MonoBehaviour
         {
             EndGame();
         }
-        if (PlayerStats.Lives <= 0)
+        if (PlayerStats.Lives <= 0) // if the player loses their 3 lives it runs the end game function
         {
             EndGame();
         }
     }
 
-    void EndGame()
+    void EndGame() // game over function
     {
         GameIsOver = true;
         gameOverUI.SetActive(true); 
