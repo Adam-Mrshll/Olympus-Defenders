@@ -51,6 +51,7 @@ public class Node : MonoBehaviour
 
     void BuildTurret(TurretBlueprint blueprint) // function to build the turret
     {
+        GetComponent<Renderer>().material.color = hoverColor; // darkens the node color when turret is built on it
         if (PlayerStats.Money < blueprint.cost)
         {
             Debug.Log("Not enough money to build that!"); // sends a text in console if not enough money to build turret
@@ -69,6 +70,7 @@ public class Node : MonoBehaviour
 
     public void UpgradeTurret() // function to upgrade the turret
     {
+        GetComponent<Renderer>().material.color = hoverColor; // darkens the node color when turret is upgraded
         if (PlayerStats.Money < turretBlueprint.upgradeCost)
         {
             Debug.Log("Not enough money to upgrade that!");
@@ -89,6 +91,7 @@ public class Node : MonoBehaviour
 
     public void SellTower () // function to sell the turret
     {
+        rend.material.color = startColor;
         PlayerStats.Money += turretBlueprint.GetSellAmount();
 
         //spawn a cool effect
@@ -105,20 +108,27 @@ public class Node : MonoBehaviour
         if (!buildManager.CanBuild)
             return;
 
-        if (buildManager.HasMoney)
+        // Only change color on mouse hover if no turret is placed
+        if (turret == null)
         {
-            GetComponent<Renderer>().material.color = hoverColor;
+            if (buildManager.HasMoney)
+            {
+                GetComponent<Renderer>().material.color = hoverColor;
+            }
+            else
+            {
+                GetComponent<Renderer>().material.color = notEnoughMoneyColor; // change to red if not enough money
+            }
         }
-        else
-        {
-            GetComponent<Renderer>().material.color = notEnoughMoneyColor; // change to red if not enough money
-        }
-
     }
 
     void OnMouseExit() // when mouse stops hovering over the node this function runs
     {
-        rend.material.color = startColor;
+        // Only reset color if no turret placed, otherwise keep the darkened color for turret
+        if (turret == null)
+        {
+            rend.material.color = startColor;
+        }
     }
 
 }
