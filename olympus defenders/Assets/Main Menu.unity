@@ -340,7 +340,7 @@ GameObject:
   - component: {fileID: 85847514}
   - component: {fileID: 85847513}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -360,9 +360,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 702510585}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: -200}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 200, y: -200}
   m_SizeDelta: {x: 300, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &85847513
@@ -398,18 +398,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Controls:
-
-
-    WSAD or Mouse
-
-    to move camera
-
-
-    Zoom in and out
-
-    with
-    touchpad'
+  m_Text: "Controls:\n\nWSAD or Mouse\nto move camera\n\nZoom in and out\nwith touchpad
+    \nor mouse scroll"
 --- !u!222 &85847514
 CanvasRenderer:
   m_ObjectHideFlags: 0
