@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
 	public GameObject ui;
+
 void Update ()
 {
 	if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
@@ -23,14 +24,16 @@ void Update ()
 		Time.timeScale = 1f;
 	}
 }
-
+public string menutoload = "Main Menu";
 public void Retry () 
 {
 	Toggle();
 	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 }
-public void menu ()
-{
-	Debug.Log("Go To Menu.");
+	public void menu()
+	{
+		Debug.Log("Go To Menu.");
+		SceneManager.LoadScene(menutoload);
+	
 }
 }

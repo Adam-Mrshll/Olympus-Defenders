@@ -3628,6 +3628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1827350385}
+  menutoload: Main Menu
 --- !u!1001 &340687028
 PrefabInstance:
   m_ObjectHideFlags: 0
