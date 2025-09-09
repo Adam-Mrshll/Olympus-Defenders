@@ -4,16 +4,16 @@ public class PauseMenu : MonoBehaviour
 {
 	public GameObject ui;
 
-void Update ()
-{
+void Update () // Checks for input to toggle pause menu
+    {
 	if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
 
 {
-	Toggle ();
+	Toggle (); // Call Toggle function
+        }
 }
-}
-	public void Toggle ()
-{
+	public void Toggle () // Toggle pause menu
+    {
 	ui.SetActive(!ui.activeSelf);
 
 	if (ui.activeSelf)
@@ -25,13 +25,13 @@ void Update ()
 	}
 }
 public string menutoload = "Main Menu";
-public void Retry () 
-{
+public void Retry ()  // Reloads current scene
+    {
 	Toggle();
 	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 }
-	public void menu()
-	{
+	public void menu() // Loads main menu scene
+    {
 		Debug.Log("Go To Menu.");
 		SceneManager.LoadScene(menutoload);
 	

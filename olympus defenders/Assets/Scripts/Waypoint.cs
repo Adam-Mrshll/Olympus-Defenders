@@ -4,8 +4,8 @@ public class Waypoint : MonoBehaviour
 {
     public static Transform[] points;
 
-    void Awake()
-    {
+    void Awake() // Awake is called when the script instance is being loaded    
+    { 
         points = new Transform[transform.childCount]; // C# is case-sensitive
 
         for (int i = 0; i < points.Length; i++)
